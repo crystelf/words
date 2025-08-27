@@ -13,8 +13,11 @@
 > 例如：
 > - 现有`poke.json`
 > - `y68`想给`wuyubot`整一个自己的`poke`
-> - 那么在`src`新建文件`wuyu-poke.json`
+> - 那么在`src/wuyu`新建文件`wuyu-poke.json`
 
 #### 调用方法
 
-- 更新后访问`https://core.crystelf.top/api/getText/${文件名}` 就可以看到文案了
+- 更新后使用`post`请求`https://core.crystelf.top/api/getText` ,传入两个参数：
+- `type`: 对应文件夹名
+- `id`: 对应文件名
+- 就可以看到文案了
